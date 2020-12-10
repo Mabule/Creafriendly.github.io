@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 87vh;
+	background-color: #000;
+}
+
+h1{
+	background: url('https://www.fredzone.org/wp-content/uploads/2020/05/Galaxies.jpg');
+	color: transparent;
+	-webkit-background-clip: text;
+	transform: translateY(-30px);
+	opacity: 0;
+	font-size: 4em;
+	position: relative;
+	font-weight: bold;
+	transition: opacity 2s ease-in-out,
+	transform 1s ease-in-out;
+}
+
+.bar{
+	position: absolute;
+	width: 0;
+	bottom: -5px;
+	left: 0;
+	background: url('https://www.fredzone.org/wp-content/uploads/2020/05/Galaxies.jpg');
+	height: 3px;
+    transition: width 0.8s ease-in-out;
+}
+
+/*----------Responsive----------*/
+@media (min-width: 1280px){
+
+}
+@media (min-width: 1024px){
+
+}
+@media (min-width: 768px){
+
+}
+@media (min-width: 640px){
+
+}
+@media (min-width: 300px){
+
+}
