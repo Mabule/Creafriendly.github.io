@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
 
+:root{
+	--pic: url('https://www.intelligence-artificielle-school.com/wp-content/uploads/2020/08/AdobeStock_316550206.jpeg');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,14 +15,23 @@ body{
 	align-items: center;
 	justify-content: center;
 	min-height: 87vh;
-	background-color: #000;
+	background-color: #050505;
+	display: flex;
+	flex-direction: column;
 }
 
 h1{
-	background: url('https://www.fredzone.org/wp-content/uploads/2020/05/Galaxies.jpg');
+	background: var(--pic);
+	background-position: center;
 	color: transparent;
+	height: 100vh;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	-webkit-background-clip: text;
-	transform: translateY(-30px);
+	transform: translateY(-60px);
 	opacity: 0;
 	position: relative;
 	font-weight: bold;
@@ -31,11 +44,56 @@ h1{
 .bar{
 	position: absolute;
 	width: 0;
-	bottom: -5px;
-	left: 0;
-	background: url('https://www.fredzone.org/wp-content/uploads/2020/05/Galaxies.jpg');
+	bottom: 45%;
+	left: 9%;
+	background: var(--pic);
+	background-position: center;
 	height: 3px;
     transition: width 0.8s ease-in-out;
+}
+
+.down{
+	transform: translateY(20px;);
+	opacity: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+	color: default;
+	bottom: 12px;
+	background-color: #fff;
+	height: 20px;
+	width: 20px;
+	border-radius: 20px;
+	transition: 0.8s ease-in-out;
+	animation: slide 2s ease-in-out infinite; 
+}
+
+.down i{
+	background: linear-gradient(to right, blue, cyan, green, yellow, red, magenta) no-repeat;
+	-webkit-background-clip: text;
+	/*background-size: 50%;*/
+	background-position: center;
+	color: transparent;
+}
+
+@keyframes slide{
+	0%{transform: translateY(-8px);}
+	50%{transform: translateY(8px);}
+	100%{transform: translateY(-8px);}
+}
+
+.parallax{
+	margin-top: 100vh;
+	min-height: 1000vh;
+	min-width: 100%;
+	background: url('https://cdn.futura-sciences.com/buildsv6/images/mediumoriginal/e/0/8/e08a2c82db_50149770_hubble-legacy-field-2.jpg');
+}
+
+div{
+	color: #fff;
 }
 
 /*----------Responsive----------*/
