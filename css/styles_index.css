@@ -20,11 +20,12 @@ h1{
 	-webkit-background-clip: text;
 	transform: translateY(-30px);
 	opacity: 0;
-	font-size: 4em;
 	position: relative;
 	font-weight: bold;
 	transition: opacity 2s ease-in-out,
 	transform 1s ease-in-out;
+	margin: 0 10px 0 10px;
+	text-align: center;
 }
 
 .bar{
@@ -38,21 +39,39 @@ h1{
 }
 
 /*----------Responsive----------*/
-/*@media (min-width: 1401px){
-	font-size: 4em;
+@media (min-width: 1401px){
+	h1{
+		font-size: 4em;
+	}
 }
 @media (min-width: 1280px) and (max-width: 1400px){
-	font-size: 3em;
+	h1{
+		font-size: 4em;
+	}
 }
 @media (min-width: 1024px) and (max-width: 1279px){
-	font-size: 2em;
+	h1{
+		font-size: 3em;
+	}
 }
 @media (min-width: 768px) and (max-width: 1023px){
-	font-size: 1em;
+	h1{
+		font-size: 2.4em;
+	}
 }
-@media (min-width: 640px) and (max-width: 767px){
-	font-size: 4em;
+@media (min-width: 642px) and (max-width: 767px){
+	h1{
+		font-size: 2em;
+	}
 }
-@media (max-width: 639px){
-	font-size: 4em;
-}*/
+@media (min-width: 430px) and (max-width: 641px){
+	h1{
+		font-size: 140%;
+	}
+}
+
+@media (max-width: 429px){
+	h1{
+		font-size: 170%;
+	}
+}
